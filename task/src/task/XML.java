@@ -1,14 +1,11 @@
 package task;
 
 import java.io.File;
-
-import org.w3c.dom.*;
-  
+import org.w3c.dom.*; 
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.Statement;
 import java.util.ArrayList;
-
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.DocumentBuilder;
 import org.xml.sax.SAXException;
@@ -62,7 +59,7 @@ public void readAndSave(String filename){
 			if(firstNameList.getLength()>0) {
 					Element firstNameElement = (Element)firstNameList.item(0);  
 					NodeList textFNList = firstNameElement.getChildNodes();
-					System.out.println("First Name : " + ((Node)textFNList.item(0)).getNodeValue().trim());
+					System.out.println("Imie : " + ((Node)textFNList.item(0)).getNodeValue().trim());
 					customer[1] = ((Node)textFNList.item(0)).getNodeValue().trim();
 			}
 
@@ -72,7 +69,7 @@ public void readAndSave(String filename){
 			if(lastNameList.getLength()>0) {
 					Element lastNameElement = (Element)lastNameList.item(0);
 					NodeList textLNList = lastNameElement.getChildNodes();
-					System.out.println("Last Name : " + ((Node)textLNList.item(0)).getNodeValue().trim());
+					System.out.println("Nazwisko : " + ((Node)textLNList.item(0)).getNodeValue().trim());
 					customer[2] = ((Node)textLNList.item(0)).getNodeValue().trim();
 			}
 
@@ -83,7 +80,7 @@ public void readAndSave(String filename){
 			if (ageList.getLength()>0) {
 					Element ageElement = (Element)ageList.item(0);
 					NodeList textAgeList = ageElement.getChildNodes();
-					System.out.println("Age : " + ((Node)textAgeList.item(0)).getNodeValue().trim()); 
+					System.out.println("Wiek : " + ((Node)textAgeList.item(0)).getNodeValue().trim()); 
 					customer[3] = ((Node)textAgeList.item(0)).getNodeValue().trim();
 			}
 			
