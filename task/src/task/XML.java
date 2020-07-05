@@ -120,7 +120,7 @@ public void readAndSave(String filename){
 					}	
 					
 					
-				// EMAIL
+				//EMAIL
 					
 					NodeList emailsList = contactElement.getElementsByTagName("email");
 					if(emailsList.getLength()>0) {
@@ -145,7 +145,7 @@ public void readAndSave(String filename){
 						}
 					}
 					
-				// JABBER
+				//JABBER
 					
 					NodeList jabberList = contactElement.getElementsByTagName("jabber");
 					if(jabberList.getLength()>0) {
@@ -178,17 +178,7 @@ public void readAndSave(String filename){
 					
 				
 			} //END OF if FOR CONTACTS
-			
-			/*for(int j=0; j<totalContacts ; j++) {
-					Node contactNode = listOfContacts.item(j);
-					if(contactNode.getNodeType() == Node.ELEMENT_NODE){
-						Element contactElement = (Element)contactNode;
-						System.out.println("KONTAKT NR:" + j);
-				}
-			}*/
-			
-			
-			
+
 
 		 
 			
@@ -203,9 +193,9 @@ public void readAndSave(String filename){
 				myStmt.executeUpdate(sqlQueryCustomer);
 				System.out.println("DODANO REKORD o ID do tabeli CUSTOMERS: " + i + "\n");
 		
-		//Tworzenie zapytania i wyslanie go do bazy danych - dane kontaktu;		
+	
 		
-		}//end of if clause
+		}//end of if
 
 		
 	  
@@ -214,7 +204,7 @@ public void readAndSave(String filename){
 		
 		
 		
-	}//end of for loop with s var
+	}//end of for 
 	  
 
 
@@ -246,7 +236,7 @@ public void readAndSave(String filename){
 		t.printStackTrace ();
 		System.out.println("Plik nie istnieje lub te dane zostaly juz wprowadzone do bazy danych!!!!");
 	}
-	//System.exit (0);
+	
 	  
 	}//end of main	
 
