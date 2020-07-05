@@ -19,7 +19,7 @@ public void readAndSave(String filename){
 		
 		ArrayList<String[]> records = new ArrayList<String[]>(); // Lista tablic stringow;
 	//Polaczenie z baza
-		Connection myConn = DriverManager.getConnection("jdbc:mysql://localhost:3306/cc", "root", "hyfeb");
+		Connection myConn = DriverManager.getConnection("jdbc:mysql://localhost:3306/cc", "root", "***");
 		Statement myStmt = myConn.createStatement();
 		String sqlQueryCustomer;
 		

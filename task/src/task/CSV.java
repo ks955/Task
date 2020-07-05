@@ -19,7 +19,7 @@ public void readAndSave(String filename) {
 try   
 	{  
 	
-		Connection myConn = DriverManager.getConnection("jdbc:mysql://localhost:3306/cc", "root", "hyfeb");
+		Connection myConn = DriverManager.getConnection("jdbc:mysql://localhost:3306/cc", "root", "***");
 		Statement myStmt = myConn.createStatement();
 
 		BufferedReader br = new BufferedReader(new FileReader("files\\"+filename));  
