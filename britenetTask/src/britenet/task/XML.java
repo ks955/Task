@@ -112,7 +112,7 @@ public void readAndSave(String filename){
 						}
 					}
 					
-				//JABBER
+//JABBER
 					NodeList jabberList = contactElement.getElementsByTagName("jabber");
 					if(jabberList.getLength()>0) {
 						System.out.println("Ilosc AD.JABBER dla OSOBY o ID nr: " + i + " WYNOSI: " + emailsList.getLength());
